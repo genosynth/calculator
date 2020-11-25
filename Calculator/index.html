@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="outercontainer">
+        <h1>CALCULATOR</h1>
+        <div class="containertext">
+            <input type="text" class="result" id="resultbox">
+        </div>
+        <div class="anothercontainer">
+            <div class="container1">
+                <button class="buttons" type="button" onclick="putNumber(7)">7</button>
+                <button type="button" class="buttons" onclick="putNumber(8)">8</button>
+                <button type="button" class="buttons" onclick="putNumber(9)">9</button>
+                <button type="button" class="buttons" onclick="putNumber(0)">0</button>
+                <button type="button" class="buttons" onclick="cancel()">C</button>
+            </div>
+            <div class="container1">
+                <button type="button" class="buttons" onclick="putNumber(4)">4</button>
+                <button type="button" class="buttons" onclick="putNumber(5)">5</button>
+                <button type="button" class="buttons" onclick="putNumber(6)">6</button>
+                <button type="button" class="buttons" onclick="operator('/')">/</button>
+            </div>
+            
+            <div class="container1">
+                <button type="button" class="buttons" onclick="putNumber(1)">1</button>
+                <button type="button" class="buttons" onclick="putNumber(2)">2</button>
+                <button type="button" class="buttons" onclick="putNumber(3)">3</button>
+                <button type="button" class="buttons" onclick="operator('*')">*</button>
+            </div>
+            <div class="container1">
+            
+            <button type="button" class="buttons" onclick="operator('-')">-</button>
+            <button type="button" class="buttons" onclick="operator('+')">+</button>
+            <button type="button" class="buttons" onclick="putNumber('.')">.</button>
+            <button type="button" class="buttons" onclick="equals()">=</button>
+            
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+<script src="javascript.js"></script>
+</html>
